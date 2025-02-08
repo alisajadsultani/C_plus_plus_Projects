@@ -155,7 +155,6 @@ void Game::LockBlock()
     std::vector<Position> tiles = currentBlock.GetCellPosition();
     for (Position item : tiles)
     {
-        // didn't undrestand it porperly
         grid.grid[item.row][item.col] = currentBlock.id;
     }
     currentBlock = nextBlock;
